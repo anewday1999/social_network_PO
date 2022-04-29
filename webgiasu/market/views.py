@@ -12,16 +12,10 @@ from django.conf import settings
 
 #Web
 from rest_framework import generics
-from myapi.serializers import marketpostSerializer
 #payment
 from cloudipsp import Api, Checkout
 # Create your views here.
 User = get_user_model()
-
-class APIAllPost(generics.ListCreateAPIView):
-    serializer_class = marketpostSerializer
-    def get_queryset(self):
-        return marketpost.objects.all()
     
 
 def Market(request):

@@ -11,7 +11,6 @@ from django.contrib.auth.forms import UserCreationForm, UsernameField
 from django.shortcuts import redirect
 from django.urls import reverse
 from django import forms
-from captcha.fields import ReCaptchaField
 from django.views.generic.edit import UpdateView
 from profiles.form import RegisterForm, LoginForm
 from profiles.form import ProfileEditForm
