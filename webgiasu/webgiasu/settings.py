@@ -46,10 +46,8 @@ INSTALLED_APPS = [
     'market.apps.MarketConfig',
     'employee.apps.EmployeeConfig',
 
-    'django_behave',
 
 ]
-TEST_RUNNER = 'django_behave.runner.DjangoBehaveTestSuiteRunner'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
