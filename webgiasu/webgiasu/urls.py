@@ -3,9 +3,8 @@ from os import name
 from django.contrib import admin
 from django.db import router
 from django.urls import path, include
-from django.views.generic import TemplateView
 
-from django.conf import Settings, settings
+from django.conf import settings
 from django.conf.urls.static import static
 
 from profiles import views as profiles_views
@@ -16,9 +15,7 @@ from employee import views as views_employee
 from basic_stt import views as views_basic
 
 from django.contrib.auth import views as auth_views
-from rest_framework import routers
 
-from django.conf.urls import url
 
 
 
