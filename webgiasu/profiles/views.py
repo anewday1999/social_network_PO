@@ -1,27 +1,20 @@
-import django
-from django.contrib.auth import forms, tokens
-from django.forms import fields, widgets
-from django.http import request
+
 from django.shortcuts import render
 from django.urls.base import reverse_lazy
 from django.views.generic import TemplateView, FormView
 from django.contrib.auth.views import LoginView, LogoutView  
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.forms import UserCreationForm, UsernameField
+
 from django.shortcuts import redirect
 from django.urls import reverse
-from django import forms
-from django.views.generic.edit import UpdateView
+
 from profiles.form import RegisterForm, LoginForm
 from profiles.form import ProfileEditForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import get_user_model
 from django.contrib import messages
 from django.core.mail import send_mail
-from django.contrib.sites.shortcuts import get_current_site
 from .tokens import account_activation_token
 from django.conf import settings
-import pprint
 
 User = get_user_model()
 

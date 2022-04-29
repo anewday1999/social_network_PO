@@ -1,19 +1,14 @@
 from logging import exception
 from django.http.response import JsonResponse
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 from .models import marketpost, subs_market
 from django.contrib.auth import get_user_model
 from django.views.decorators.csrf import csrf_exempt
 from PIL import Image
 from django.core.paginator import Paginator
-import time
 from django.core.mail import send_mail
 from django.conf import settings
 
-#Web
-from rest_framework import generics
-#payment
-from cloudipsp import Api, Checkout
 # Create your views here.
 User = get_user_model()
     

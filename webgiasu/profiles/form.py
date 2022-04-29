@@ -3,16 +3,14 @@ from django.contrib.auth.forms import UserCreationForm, UsernameField
 from django.contrib.auth.models import User
 from django import forms
 from django.contrib.auth import get_user_model
-from django.db.models import fields
-from django.forms.fields import CharField
 from django.utils.translation import gettext, gettext_lazy as _
 from django.core.exceptions import ValidationError
 from django.utils.safestring import mark_safe
 from django.contrib.auth.forms import (
-    AuthenticationForm, PasswordChangeForm, PasswordResetForm, SetPasswordForm,
+    AuthenticationForm,
 )
 from django.contrib.auth import (
-    authenticate, get_user_model, password_validation,
+    get_user_model,
 )
 
 User = get_user_model()
