@@ -41,8 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'crispy_forms',
-
     'profiles.apps.ProfilesConfig',
     'tutor.apps.TutorConfig',
     'market.apps.MarketConfig',
@@ -154,7 +152,6 @@ EMAIL_PORT = 587
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 LOGIN_REDIRECT_URL = '/profile'
 
