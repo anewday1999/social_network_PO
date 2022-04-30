@@ -15,7 +15,6 @@ class UserTestCase(TestCase):
             'sexs': 'Male',
             'years_of_birth': 15,
             'more': 'More about user',
-            'avatar': 'default.jpg',
             'paid_until': cur_date,
             'is_sub_findtutor': True,
             'is_sub_market': False, 
@@ -33,7 +32,6 @@ class UserTestCase(TestCase):
             sexs = self.arg['sexs'],
             years_of_birth = self.arg['years_of_birth'],
             more = self.arg['more'],
-            avatar = self.arg['avatar'],
             paid_until = self.arg['paid_until'],
             is_sub_findtutor = self.arg['is_sub_findtutor'],
             is_sub_market = self.arg['is_sub_market'],
@@ -55,7 +53,6 @@ class UserTestCase(TestCase):
         self.assertEqual(user.sexs, res['sexs'])
         self.assertEqual(user.years_of_birth, res['years_of_birth'])
         self.assertEqual(user.more, res['more'])
-        self.assertEqual(user.avatar, res['avatar'])
         self.assertEqual(user.paid_until, res['paid_until'])
         self.assertEqual(user.is_sub_findtutor, res['is_sub_findtutor'])
         self.assertEqual(user.is_sub_market, res['is_sub_market'])
@@ -67,14 +64,3 @@ class UserTestCase(TestCase):
         res = self.arg.copy()
         self.compare_with(res)
 
-    def test_set_paid_until(self):
-        res = self.arg.copy()
-        date_or_timestamp = 10
-        res['paid_until'] = date.fromtimestamp(date_or_timestamp)
-        user = self.user
-        user.set_paid_until(date_or_timestamp)
-        self.compare_with(res, user)
-    
-    def test_has_paid(self):
-        user = self.user
-        self.assertEqual(user.has_paid(), True)
