@@ -33,4 +33,5 @@ jobs:
     - name: Run Tests
       run: |
         cd webgiasu
+        python manage.py makemigrations
         python manage.py test
