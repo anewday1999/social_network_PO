@@ -1,4 +1,3 @@
-from calendar import calendar
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 from employee.models import employeepost

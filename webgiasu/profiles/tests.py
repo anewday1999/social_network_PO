@@ -78,4 +78,3 @@ class UserTestCase(TestCase):
     def test_has_paid(self):
         user = self.user
         self.assertEqual(user.has_paid(), True)
-# Create your tests here.

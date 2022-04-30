@@ -1,4 +1,3 @@
-from calendar import calendar
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 from tutor.models import findtutorpost
@@ -45,4 +44,3 @@ class findtutorpostTestCase(TestCase):
     def test_findtutorpost(self):
         res = self.arg.copy()
         self.compare_with(res)
-# Create your tests here.
