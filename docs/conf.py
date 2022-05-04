@@ -27,7 +27,7 @@ django.setup()
 
 project = 'webgiasu'
 copyright = '2022, anhthu'
-author = 'anhthu'
+author = 'anhthu' 
 
 # The short X.Y version
 version = ''
@@ -82,6 +82,7 @@ pygments_style = None
 # a list of builtin themes.
 #
 html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
